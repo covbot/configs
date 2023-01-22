@@ -4,9 +4,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"license": "MIT",
+	"type": "module",
 	"exports": {
 		"./jest": {
-			"require": "./src/jest-config.js",
+			"import": "./src/jest-config.js",
 			"types": "./src/jest-config.d.ts"
 		},
 		"./prettier": {
