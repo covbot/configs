@@ -4,6 +4,17 @@
 	"version": "1.0.0",
 	"private": true,
 	"license": "MIT",
+	"exports": {
+		"./jest": {
+			"require": "./src/jest-config.js"
+		},
+		"./prettier": {
+			"require": "./src/prettier-config.js"
+		},
+		"./syncpack": {
+			"require": "./src/syncpack-config.js"
+		}
+	},
 	"scripts": {
 		"format": "pnpm format:syncpack && pnpm format:prettier",
 		"format:prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml}\"",

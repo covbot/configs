@@ -26,6 +26,7 @@ const defineConfig = (overrides) => {
 				'license',
 				'keywords',
 				'publishConfig',
+				'exports',
 				'scripts',
 				'dependencies',
 				'devDependencies',
