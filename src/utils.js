@@ -1,4 +1,4 @@
-import mergeWith from 'lodash.mergewith';
+const mergeWith = require('lodash.mergewith');
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {};
@@ -16,7 +16,7 @@ const performArrayConcat = (objectValue, sourceValue) => {
  * @param {(T | false | undefined | null)[]} sources
  * @returns {T}
  */
-export const mergeConfigs = (concatArrays = false, object, ...sources) => {
+const mergeConfigs = (concatArrays = false, object, ...sources) => {
 	let customizer = noop;
 
 	if (concatArrays) {
@@ -25,3 +25,5 @@ export const mergeConfigs = (concatArrays = false, object, ...sources) => {
 
 	return mergeWith(object, ...sources.filter(Boolean), customizer);
 };
+
+module.exports = { mergeConfigs };

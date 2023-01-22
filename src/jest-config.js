@@ -1,4 +1,4 @@
-import { mergeConfigs } from './utils';
+const { mergeConfigs } = require('./utils');
 
 /**
  * Function which generates configuration for Jest, using organization defaults.
@@ -7,7 +7,7 @@ import { mergeConfigs } from './utils';
  *   configuration, consider changing default configuration across all repositories
  * @returns {import('ts-jest').JestConfigWithTsJest}
  */
-export const defineConfig = (esm, overrides) => {
+const defineConfig = (esm, overrides) => {
 	return mergeConfigs(
 		false,
 		{
@@ -28,3 +28,5 @@ export const defineConfig = (esm, overrides) => {
 		overrides,
 	);
 };
+
+module.exports = { defineConfig };

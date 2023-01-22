@@ -4,18 +4,17 @@
 	"version": "1.0.0",
 	"private": true,
 	"license": "MIT",
-	"type": "module",
 	"exports": {
 		"./jest": {
-			"import": "./src/jest-config.js",
+			"require": "./src/jest-config.js",
 			"types": "./types/jest-config.d.ts"
 		},
 		"./prettier": {
-			"import": "./src/prettier-config.js",
+			"require": "./src/prettier-config.js",
 			"types": "./types/prettier-config.d.ts"
 		},
 		"./syncpack": {
-			"import": "./src/syncpack-config.js",
+			"require": "./src/syncpack-config.js",
 			"types": "./types/syncpack-config.d.ts"
 		}
 	},

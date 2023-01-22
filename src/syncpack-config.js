@@ -1,4 +1,4 @@
-import { mergeConfigs } from './utils';
+const { mergeConfigs } = require('./utils');
 
 /**
  * Function which generates configuration for Syncpack, using organization defaults.
@@ -6,7 +6,7 @@ import { mergeConfigs } from './utils';
  *   configuration, consider changing default configuration across all repositories
  * @returns {import('syncpack/dist/types').SyncpackConfig}
  */
-export const defineConfig = (overrides) => {
+const defineConfig = (overrides) => {
 	return mergeConfigs(
 		true,
 		{
@@ -40,3 +40,5 @@ export const defineConfig = (overrides) => {
 		overrides,
 	);
 };
+
+module.exports = { defineConfig };
