@@ -1,4 +1,4 @@
-const { mergeConfigs } = require('./utils');
+import { mergeConfigs } from './utils';
 
 /**
  * Function which generates configuration for Prettier, using organization defaults.
@@ -6,7 +6,7 @@ const { mergeConfigs } = require('./utils');
  *   configuration, consider changing default configuration across all repositories
  * @returns {import('prettier').Config}
  */
-const defineConfig = (overrides) => {
+export const defineConfig = (overrides) => {
 	return mergeConfigs(
 		false,
 		{
@@ -25,5 +25,3 @@ const defineConfig = (overrides) => {
 		overrides,
 	);
 };
-
-module.exports = { defineConfig };

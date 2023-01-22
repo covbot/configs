@@ -8,13 +8,15 @@
 	"exports": {
 		"./jest": {
 			"import": "./src/jest-config.js",
-			"types": "./src/jest-config.d.ts"
+			"types": "./types/jest-config.d.ts"
 		},
 		"./prettier": {
-			"require": "./src/prettier-config.js"
+			"import": "./src/prettier-config.js",
+			"types": "./types/prettier-config.d.ts"
 		},
 		"./syncpack": {
-			"require": "./src/syncpack-config.js"
+			"import": "./src/syncpack-config.js",
+			"types": "./types/syncpack-config.d.ts"
 		}
 	},
 	"scripts": {
@@ -22,7 +24,8 @@
 		"format:prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml}\"",
 		"format:syncpack": "syncpack format",
 		"lint": "eslint .",
-		"lint:fix": "pnpm lint --fix"
+		"lint:fix": "pnpm lint --fix",
+		"declarations": "tsc"
 	},
 	"dependencies": {
 		"lodash.mergewith": "^4.6.2"
