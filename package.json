@@ -19,12 +19,12 @@
 		}
 	},
 	"scripts": {
+		"declarations": "tsc",
 		"format": "pnpm format:syncpack && pnpm format:prettier",
 		"format:prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml}\"",
 		"format:syncpack": "syncpack format",
 		"lint": "eslint .",
-		"lint:fix": "pnpm lint --fix",
-		"declarations": "tsc"
+		"lint:fix": "pnpm lint --fix"
 	},
 	"dependencies": {
 		"lodash.mergewith": "^4.6.2"

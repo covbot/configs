@@ -1,11 +1,11 @@
 {
-    "compilerOptions": {
-        "allowJs": true,
-        "declaration": true,
-        "emitDeclarationOnly": true,
-        "outDir": "types",
-        "removeComments": false,
-        "declarationMap": true
-    },
-    "include": ["./src/**/*.js"]
+	"compilerOptions": {
+		"allowJs": true,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outDir": "types",
+		"removeComments": false,
+		"declarationMap": true
+	},
+	"include": ["./src/**/*.js"]
 }
