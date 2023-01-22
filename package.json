@@ -7,7 +7,8 @@
 	"type": "module",
 	"exports": {
 		"./jest": {
-			"import": "./src/jest-config.js"
+			"import": "./src/jest-config.js",
+			"types": "./src/jest-config.d.ts"
 		},
 		"./prettier": {
 			"require": "./src/prettier-config.js"
