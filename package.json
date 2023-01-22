@@ -6,7 +6,8 @@
 	"license": "MIT",
 	"exports": {
 		"./jest": {
-			"require": "./src/jest-config.js"
+			"require": "./src/jest-config.js",
+			"types": "./src/jest-config.d.ts"
 		},
 		"./prettier": {
 			"require": "./src/prettier-config.js"
