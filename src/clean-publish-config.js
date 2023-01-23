@@ -25,7 +25,7 @@ const defineConfig = (overrides) => {
                 /^aqu\.config\.(js|cjs|mjs|ts|json)$/,
                 '.aqurc',
                 /^\.syncpackrc(\.(json|yaml|yml|js|cjs))?$/,
-                /^\.syncpack\.config\.(js|cjs)$/
+                /^syncpack\.config\.(js|cjs)$/
 			],
 		},
 		overrides,
