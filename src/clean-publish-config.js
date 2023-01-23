@@ -15,13 +15,15 @@ const defineConfig = (overrides) => {
 			files: [
 				'docs',
 				'src',
-				'aqu.config.json',
 				'.prettierignore',
 				'.gitignore',
-				'jest.config.ts',
-				'tsconfig.json',
 				'.stackblitzrc',
 				'coverage',
+                /^prettier\.config\.(js|cjs)$/,
+                /^tsconfig\.(\w+\.)?json$/,
+                /^jest\.config\.(js|ts|mjs|cjs|json)$/,
+                /^aqu\.config\.(js|cjs|mjs|ts|json)$/,
+                '.aqurc'
 			],
 		},
 		overrides,
