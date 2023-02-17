@@ -22,10 +22,14 @@ const defineConfig = (overrides) => {
                 /^prettier\.config\.(js|cjs)$/,
                 /^tsconfig\.(\w+\.)?json$/,
                 /^jest\.config\.(js|ts|mjs|cjs|json)$/,
+                /^tsup\.config\.(js|ts|mjs|cjs|json)$/,
                 /^aqu\.config\.(js|cjs|mjs|ts|json)$/,
                 '.aqurc',
                 /^\.syncpackrc(\.(json|yaml|yml|js|cjs))?$/,
-                /^syncpack\.config\.(js|cjs)$/
+                /^syncpack\.config\.(js|cjs)$/,
+				'.config',
+				'playground',
+				'pnpm-workspace.yaml'
 			],
 		},
 		overrides,
